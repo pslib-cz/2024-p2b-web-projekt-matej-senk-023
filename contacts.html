@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fight Gear Shop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Fight Gear Shop</title>
   <link rel="stylesheet" href="./src/styles/style.css" />
-  
-  <!-- Google Font -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Island+Moments&display=swap" rel="stylesheet">
-  
 
   <script type="module" crossorigin src="/2024-p2b-web-projekt-matej-senk-023/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
   <script type="module" crossorigin src="/2024-p2b-web-projekt-matej-senk-023/assets/main-Dsdwt6T7.js"></script>
   <link rel="stylesheet" crossorigin href="/2024-p2b-web-projekt-matej-senk-023/assets/main-Ds_YmOBQ.css">
 </head>
 <body>
-  <header class="navbar">
+<header class="navbar">
   <p class="nav-title">Fight Gear Shop</p>
   <nav class="nav-links">
     <a href="/2024-p2b-web-projekt-matej-senk-023/index.html">Home</a>
@@ -29,17 +27,33 @@
 </header>
 
 
-  <main>
-    <h1 class="title">Fight Gear Shop</h1>
-    <a href="/2024-p2b-web-projekt-matej-senk-023/info.html" class="button">
-      <img src="/2024-p2b-web-projekt-matej-senk-023/images/indexgloves.png" alt="button" class="main-image" />
-    </a>
+  <main class="contact-container">
+    <h1>Contact Us</h1>
+    <p>Have a question, suggestion, or just want to say hello? Drop us a message!</p>
+
+    <form action="#" method="post" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </main>
+
+  
 
   <footer class="footer">
     <p class="footer-text">© 2025 Fight Gear Shop</p>
     <img src="./images/logo.png" alt="Logo FGS" class="logo"/>
-  </footer>
+  </footer> 
 
 </body>
 </html>
