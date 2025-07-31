@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop | Fight Gear Shop</title>
     <link rel="stylesheet" href="./src/styles/style.css" />
 
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,15 +12,113 @@
 
 </head>
 <body>
-    <h1>Headgear</h1>
-    swipper
+  <header class="navbar">
+  <p class="nav-title">Fight Gear Shop</p>
+  <nav class="nav-links">
+    <a href="%BASE_URL%index.html">Home</a>
+    <a href="%BASE_URL%shop.html">Products</a>
+    <a href="%BASE_URL%about.html">About</a>
+    <a href="%BASE_URL%contacts.html">Contact</a>
+  </nav>
+  <button class="hamburger" aria-label="Toggle menu">&#9776;</button>
+</header>
 
-    <h1>Gloves</h1>
-    swipper
+<main>
+  <h1 class="title">Gear</h1>
+    <div class="panel">
+        <h2 class="panel-title">Headgear
+        <div class="panels-content">
+            <span class="info-icon">i
+            <span class="tooltip">In combat sports like kickboxing, MMA (especially during training), and other martial arts, headgear is commonly used for safety reasons. While it doesn't completely prevent concussions, it helps absorb impact and lowers the risk of serious injuries.
+                Headgear protects the head from cuts, bruises, and swelling caused by punches or kicks. It also covers sensitive areas like the ears and jaw, helping to prevent common injuries like cauliflower ear or jaw damage.
+                In many amateur competitions, wearing headgear is mandatory. It makes matches safer and reduces the chance of serious harm. During training, headgear gives fighters more confidence to spar and focus on improving technique without worrying as much about getting hurt.
+            </span>
+            </span>
+            </h2>
 
-    <h1>Shinguards</h1>
-    swipper
 
-        <script type="module" src="/src/scripts/main.js"></script>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/head-white.png" alt="Headgear" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/head-blue.png" alt="Headgear Blue" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/head-black.png" alt="Headgear black" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/head-green.png" alt="Headgear green" class="img-responsive" />
+                  </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="panel">
+    <h2 class="panel-title">Gloves
+    <div class="panels-content">
+    <span class="info-icon">i
+    <span class="tooltip">Boxing gloves come in different weights, measured in ounces (oz), and each size serves a specific purpose. The most common glove sizes are 8 oz, 10 oz, 12 oz, 14 oz, and 16 oz. The higher the ounce, the more padding the glove has. which means more protection for both the wearer and their opponent.
+        For example, 8 oz and 10 oz gloves are often used in professional fights because they are lighter and allow for faster punches with more power. On the other hand, 14 oz and 16 oz gloves are usually used for training and sparring, since the extra padding helps prevent injuries and makes fighters work harder, improving their stamina and strength.
+    </span>
+    </span>
+    </h2>
+
+    <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/gloves-white.png" alt="Glove white" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/gloves-blue.png" alt="Glove Blue" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/gloves-black.png" alt="Glove black" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/gloves-red.png" alt="Glove red" class="img-responsive" />
+                  </div>
+            </div>
+    
+
+    </div>
+    </div>
+
+    <div class="panel">
+    <h2 class="panel-title">Shinguards
+    <div class="panels-content">
+    <span class="info-icon">i
+    <span class="tooltip">Shin guards are crucial in kickboxing, MMA, and other striking martial arts to protect the shins during training. They help absorb the impact from kicks and blocks, preventing painful bruises, cuts, or even fractures.
+        They come in different sizes and thicknesses — heavier guards offer more protection, while lighter ones give better mobility. Good shin guards also have straps to keep them secure during fast movement.
+        Whether you're sparring or drilling kicks, shin guards let you train harder and safer without damaging your legs or your partner's.
+    </span>
+    </span>
+    </h2>
+    <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/shin-white.png" alt="Shinguard white" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/shin-blue.png" alt="Shinguard Blue" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/shin-black.png" alt="Shinguard black" class="img-responsive" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="%BASE_URL%images/shin-red.png" alt="Shinguard red" class="img-responsive" />
+                  </div>
+                </div>
+    </div>
+    </div>
+  </main>
+    
+  <footer class="footer">
+    <p class="footer-text">© 2025 Fight Gear Shop</p>
+    <img src="./images/logo.png" alt="Logo FGS" class="logo"/>
+  </footer>
+
+    <script type="module" src="/src/scripts/main.js"></script>
 </body>
 </html>
