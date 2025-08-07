@@ -5,7 +5,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../styles/main.css';
+import '../styles/style.css';
 import '../styles/normalize.css';
 
 const swiper = new Swiper('.swiper', {
