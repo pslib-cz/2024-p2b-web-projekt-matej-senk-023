@@ -1,7 +1,13 @@
 
+:root {
+  --white: #fff;
+  --black: #000;
+}
+
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,18 +17,9 @@ body {
 
 
 
-.cart {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  filter: invert(1);
-}
 
-.title {
-  font-size: 4rem;
-  margin-bottom: 30px;
-  color: white;
-}
+
+
 
 
 
@@ -30,12 +27,11 @@ body {
 .main-image {
   width: 300px;
   max-width: 90%;
-  border-radius: 12px;
   transition: transform 0.3s ease;
 }
 
 .main-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.1);
 }
 
 
@@ -48,7 +44,7 @@ body {
 }
 .footer-text {
   font-size: 0.9rem;
-  color: #fff;
+  color: var(--white);
   padding-left: 10px;
 }
 
@@ -57,6 +53,9 @@ main{
 }
 
 .title {
+  margin-bottom: 30px;
+  color: var(--white);
+
   font-family: "Island Moments", cursive;
   font-size: 3rem;
   text-align: center;
@@ -95,11 +94,11 @@ main{
   display: block;
   background-color: #444;
   font-family: serif;
-  color: white;
+  color: var(--white);
   width: 20px;
   height: 20px;
   line-height: 20px;
-  border-radius: 50%;
+  border-radius: 100%;
   font-size: 0.9rem;
   cursor: pointer;
   position: relative;
@@ -112,7 +111,7 @@ main{
   font-family: sans-serif;
   width: 250px;
   background-color: gray;
-  color: white;
+  color: var(--white);
   border-radius: 8px;
   padding: 10px;
 
@@ -137,15 +136,9 @@ main{
 
 
 .swiper {
+  margin: 20px auto 0 auto;
+  /*width: 100%;*/
   max-width: 320px;
-  margin: 20px auto 0 auto; /* center horizontally */
-}
-
-
-
-.swiper {
-  width: 100%;
-  max-width: 320px; /* Default for mobile */
   margin: 20px auto 0 auto;
 }
 
@@ -172,7 +165,7 @@ main{
 
 .swiper-slide {
   opacity: 0.3;
-  transition: opacity 0.3s ease;
+  transition: opacity 1s ease;
 }
 
 .swiper-slide-active {
@@ -198,17 +191,14 @@ main{
 /* Base navbar styling */
 .navbar {
   background: #111;
-  color: #fff;
+  color: var(--white);
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+
 
 /* Nav links */
 .nav-links {
@@ -219,7 +209,7 @@ main{
 }
 
 .nav-links a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   font-weight: 500;
 }
@@ -234,7 +224,7 @@ main{
   font-size: 1.8rem;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 
@@ -256,7 +246,7 @@ main{
   }
 
   .nav-links.active {
-    max-height: 300px; /* Adjust this based on your content */
+    max-height: 300px; 
     opacity: 1;
     padding: 20px;
   }
@@ -270,7 +260,7 @@ main{
 .nav-title {
   font-family: "Island Moments", cursive;
   font-size: 2rem;
-  color: #fff;
+  color: var(--white);
   margin: 10px;
   margin-left: 20px;
   
@@ -286,7 +276,7 @@ main{
   margin: 100px auto 40px auto;
   padding: 0 20px;
   line-height: 1.6;
-  color: #fff;
+  color: var(--white);
 }
 
 .about-container h1,
@@ -324,7 +314,7 @@ main{
   max-width: 600px;
   margin: 100px auto 40px auto;
   padding: 0 20px;
-  color: #fff;
+  color: var(--white);
 }
 
 .contact-container h1 {
@@ -345,19 +335,19 @@ main{
   border-radius: 6px;
   font-size: 1rem;
   background-color: #2a2a2a;
-  color: #fff;
+  color: var(--white);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: white;
+  border-color: var(--white);
 }
 
 .contact-form button {
   padding: 12px;
   background-color:gray ;
-  color: white;
+  color: var(--white);
   font-weight: bold;
   border: none;
   border-radius: 6px;
@@ -366,6 +356,6 @@ main{
 }
 
 .contact-form button:hover {
-  background-color: white;
-  color: black;
+  background-color: var(--white);
+  color: var(--black);
 }
